@@ -1,0 +1,93 @@
+﻿<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/materialize.min.css">
+		<link rel="stylesheet" href="css/mine.css">
+		<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Khula:600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+	</head>
+	 <body  > 
+
+		<div id="blue" class="block">
+			<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<img src="imagenes/unam.png" alt="ingeniería" style="padding-left:0%;">
+					<img src="imagenes/escudo.png" alt="escudo" style="padding-left:30%;">
+					
+			<div class="contenedor">
+			<a href="#" class="brand-logo"><img style="padding-left:10px" src="imagenes/inicio.png" alt="logoIng" width="162"></a>
+			
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<a href="sumarizacion.html"> Sumarización de rutas</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="subneteo.html"> Subneteo </a>
+					</ul>
+			</div>
+				</div>
+
+				<div class="col s12">
+					<br><br>
+					<details> 
+						<summary style="font-size: 25px;"> DATOS </summary>
+					<div id="caratula">
+						<br>
+						<br>   
+						<b>UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO </b><br>
+						<b>FACULTAD DE INGENIERÍA </b> <br>
+						<b>REDES DE DATOS SEGURAS</b> 
+						<br><b>Alumnos:</b> <b>Cervantes Beltrán Karen Cristina & Moreno Morado Jesús Daniel</b>
+						<br><b>Sumarización de Rutas y Subneteo</b>
+						<br><b>SEMESTRE:</b> <b>2020-2</b>
+						<div style="padding-top:45px">
+							
+						</div>
+					</div>
+				</details>
+					
+			</div>
+
+				
+				</div>
+				</div>
+				<div class="col s12">
+					
+				</div>
+			</div>
+		</div>
+		
+		
+	</body >
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script>
+	$("a").click(function(){
+	//posicion de home
+	var posicion_boton = $("#red").offset().top;
+	//hacemos scroll hasta el botón
+	$("html, body").animate({scrollTop:posicion_boton+"px"},{duration:1600});
+	});
+	$(document).ready(function(){
+	$('.parallax').parallax();
+	});
+	$(document).ready(function(){
+	$('.target').pushpin({
+	top: 0,
+	bottom: 1000,
+	offset: 0
+	});
+	});
+	$('.pushpin-nav').each(function() {
+	var $this = $(this);
+	var $target = $('#' + $(this).attr('data-target'));
+	$this.pushpin({
+	top: $target.offset().top,
+	bottom: $target.offset().top + $target.outerHeight() - $this.height()
+	});
+	});
+	$('.tabs-wrapper .row').pushpin('remove');
+	</script>
+</html>

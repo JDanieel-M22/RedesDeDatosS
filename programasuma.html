@@ -1,0 +1,117 @@
+﻿
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/mine.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Khula:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!--another one-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+
+    <script>
+      function crearDin(){
+         
+         var padre = document.getElementById("padre");
+         var input = document.createElement("INPUT");         
+         input.type = 'text';
+
+         padre.appendChild(input);
+      } 
+      window.onload = function(){
+         
+         var btnAdd = document.getEmentById("btn_agregar");   
+         btnAdd.onclick = crearDin;
+      }      
+   </script>
+
+
+  </head>
+  <body>
+    <div class="contenedor">
+        <a href="index.html" class="brand-logo"><img style="padding-left:15px" src="imagenes/inicio.png" alt="logoIng" width="162"></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="codigoscom.html"> 
+					<li><a href="sumarizacion.html">SUMARIZACIÓN DE RUTAS</a></li>
+					
+      </ul>
+      </div>
+    </div>
+    <br><br><br>
+   <div class="row">
+
+  <div class="col">
+    <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1"></span>
+  </div>
+  <div class="contenedor2">
+  <input type="text" id="n" style="font-size: 22px" class="form-control" id="ip" placeholder="NUMERO DE IP'S">
+
+  </div>
+</div>
+  </div>
+
+
+ </div>
+  </div>
+   </div>
+
+<button id="submit"  class="btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="algoritmo()">SIGUIENTE</button>
+        <p> </p>
+        <div  id="tablas"></div> 
+        <pre class="contenedor3" id="salida">  </pre>
+      </div>  
+    </div>
+  </div>
+</div>
+
+<script src="js/pruebaSUM/superneteo.js"></script> 
+<script>
+    $('.nav-tabs a').click(function (e) {
+      e.preventDefault();
+      $(this).tab('show');
+    })
+</script>
+
+</body>
+          
+                                    
+                                    
+                                    
+                                    <!-- termina codigo corrupto -->
+                                </div>
+
+                                
+                            </div> <!-- /.col-md-12 -->
+                        </div> <!-- /.row -->
+                    </div> <!-- /.services -->
+
+              </div> <!-- /#menu-container -->
+
+          </div> <!-- /.col-md-8 -->
+
+        </div> <!-- /.row -->
+    </div> <!-- /.container-fluid -->
+    
+    <div class="container-fluid">   
+        <div class="row">
+            <div class="col-md-12 footer">
+                
+            </div><!-- /.footer --> 
+        </div>
+    </div> <!-- /.container-fluid -->
+
+    <script src="js/vendor/jquery-1.10.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <script src="js/jquery.easing-1.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">            
+    </script>
+  </body>
+  
+</html>   
